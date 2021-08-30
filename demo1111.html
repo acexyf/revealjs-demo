@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/night.css" id="theme" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section data-markdown>
+          <textarea data-template>
+            ## Slide 1
+            A paragraph with some text and a [link](http://hakim.se).
+            ---
+            ## Slide 2
+            ---
+            ## Slide 3
+          </textarea>
+        </section>
+      </div>
+    </div>
+    <script src="./dist/reveal.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script>
+      Reveal.initialize({
+        center: true,
+        hash: true,
+        plugins: [RevealMarkdown],
+      });
+    </script>
+  </body>
+</html>

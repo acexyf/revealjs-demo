@@ -6,34 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./dist/reveal.css" />
-    <link rel="stylesheet" href="./dist/theme/night.css" id="theme" />
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>1</section>
-        <section>2</section>
-        <section>3</section>
-        <section data-markdown>
-          <textarea data-template>
-            ## Slide 1
-            A paragraph with some text and a [link](http://hakim.se).
-            ---
-            ## Slide 2
-            ---
-            ## Slide 3
-          </textarea>
+        <section>Slide 1</section>
+        <section>Slide 2</section>
+        <section>Horizontal Slide</section>
+        <section>
+          <section>Vertical Slide 1</section>
+          <section>Vertical Slide 2</section>
+        </section>
+      </div>
+      <div class="slides">
+        <section>Slide 1</section>
+        <section>Slide 2</section>
+        <section>Horizontal Slide</section>
+        <section>
+          <section>Vertical Slide 1</section>
+          <section>Vertical Slide 2</section>
         </section>
       </div>
     </div>
     <script src="./dist/reveal.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
     <script>
-      Reveal.initialize({
-        center: true,
-        hash: true,
-        plugins: [RevealMarkdown],
-      });
+      Reveal.initialize();
     </script>
   </body>
 </html>

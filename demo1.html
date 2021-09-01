@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./dist/reveal.css" />
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section>Slide 1</section>
-        <section>Slide 2</section>
-        <section>Horizontal Slide</section>
-        <section>
-          <section>Vertical Slide 1</section>
-          <section>Vertical Slide 2</section>
-        </section>
-      </div>
-      <div class="slides">
-        <section>Slide 1</section>
-        <section>Slide 2</section>
-        <section>Horizontal Slide</section>
-        <section>
-          <section>Vertical Slide 1</section>
-          <section>Vertical Slide 2</section>
-        </section>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./dist/reveal.css" />
+  <link rel="stylesheet" href="./dist/theme/black.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h2>我是第一页</h2>
+      </section>
+      <section data-background-color="aquamarine">
+        <h2>我是第二页</h2>
+      </section>
+      <section data-background-color="rgb(70, 70, 255)">
+        <h2>我是第三页</h2>
+      </section>
     </div>
-    <script src="./dist/reveal.js"></script>
-    <script>
-      Reveal.initialize();
-    </script>
-  </body>
+  </div>
+  <script src="./dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      plugins: []
+    });
+  </script>
+</body>
+
 </html>

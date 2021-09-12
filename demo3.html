@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./dist/reveal.css" />
+  <link rel="stylesheet" href="./dist/theme/black.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-auto-animate>
+        <h1>自动动画1</h1>
+      </section>
+      <section data-auto-animate>
+        <h1 data-id="box" style="margin-top: 100px; color: red;">自动动画2</h1>
+      </section>
+      <section data-auto-animate>
+        <h1 data-id="box" style="margin-top: 200px; color: blue;">自动动画3</h1>
+      </section>
+    </div>
+
+  </div>
+  <script src="./dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({})
+  </script>
+</body>
+
+</html>

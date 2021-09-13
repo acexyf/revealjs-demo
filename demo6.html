@@ -13,21 +13,29 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <pre><code data-trim data-noescape>
-            export function setToken(val = "") {
-              storageSet(TOKEN_NAME, val)
+          <pre><code data-trim data-noescape data-line-numbers="3,8-10">
+            function $initHighlight(block, cls) {
+              try {
+                if (cls.search(/\bno\-highlight\b/) != -1)
+                  return process(block, true, 0x0F) +
+                         ` class="${cls}"`;
+              } catch (e) {
+                /* handle exception */
+              }
+              for (var i = 0 / 2; i < classes.length; i++) {
+                if (checkCondition(classes[i]) === undefined)
+                  console.log('undefined');
+              }
+            
+              return (
+                <div>
+                  <web-component>{block}</web-component>
+                </div>
+              )
             }
-            export function getToken() {
-              return storageGet(TOKEN_NAME) || ""
-            }
-            export function removeToken() {
-              storageRemove(TOKEN_NAME)
-            }
-            //是否登录
-            export function checkIsLogin() {
-              return store.state.userData.isLogin
-            }
-              </code></pre>
+            
+            export  $initHighlight;
+            </code></pre>
         </section>
       </div>
     </div>

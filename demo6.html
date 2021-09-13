@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/black.css" />
+    <link rel="stylesheet" href="./plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <pre><code data-trim data-noescape>
+            export function setToken(val = "") {
+              storageSet(TOKEN_NAME, val)
+            }
+            export function getToken() {
+              return storageGet(TOKEN_NAME) || ""
+            }
+            export function removeToken() {
+              storageRemove(TOKEN_NAME)
+            }
+            //是否登录
+            export function checkIsLogin() {
+              return store.state.userData.isLogin
+            }
+              </code></pre>
+        </section>
+      </div>
+    </div>
+    <script src="./dist/reveal.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        plugins: [RevealHighlight],
+      });
+    </script>
+  </body>
+</html>
